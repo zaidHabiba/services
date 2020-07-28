@@ -5,7 +5,7 @@
 /back-end/venv
 /.pnp
 .pnp.js
-
+/front-end - Copy/node_modules
 # testing
 /coverage
 
