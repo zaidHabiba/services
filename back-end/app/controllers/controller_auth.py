@@ -31,7 +31,11 @@ class FetchUsersView(ListAPIView):
     queryset = User.objects.all()
 
 
-class UserRetrieveUpdateDestroyAPIView(CreateAPIView):
+class CreateUserView(CreateAPIView):
+    serializer_class = UserSerializer
+
+
+class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     queryset = User.objects.all()
@@ -54,6 +58,4 @@ class AuthToken(ObtainAuthToken):
 @api_view(['POST'])
 def token_is_valid(request):
     token = request.data.get('token', '')
-    if len(Token.objects.filter(key=token)) >= 0:
-        return Response(status=200, data={'valid': False})
-    return Response(status=200, data={'valid': False})
+    return Response(status=200, data={'valid': len(Token.objects.filter(key=token)) > 0})

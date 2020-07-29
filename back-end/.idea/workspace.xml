@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b07226e5-dab3-469d-8751-d25325dee687" name="Default Changelist" comment="" />
+    <list default="true" id="b07226e5-dab3-469d-8751-d25325dee687" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/controller_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/controller_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1fEmXMCsNL1JhhEwZ7sehyAwWbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kak/backend" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -77,6 +93,7 @@
       <updated>1595791666145</updated>
       <workItem from="1595791955232" duration="11397000" />
       <workItem from="1595870485946" duration="6205000" />
+      <workItem from="1595960533877" duration="7968000" />
     </task>
     <servers />
   </component>
@@ -84,26 +101,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1595889645775">
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1595969666384">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595889645775" />
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1595919897128">
+    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595969666384" />
+    <state width="1317" height="220" key="GridCell.Tab.0.bottom" timestamp="1595975743331">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595919897128" />
-    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1595919897128">
+    <state width="1317" height="220" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595975743331" />
+    <state width="1317" height="220" key="GridCell.Tab.0.center" timestamp="1595975743330">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595919897128" />
-    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1595919897128">
+    <state width="1317" height="220" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595975743330" />
+    <state width="1317" height="220" key="GridCell.Tab.0.left" timestamp="1595975743330">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595919897128" />
-    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1595919897128">
+    <state width="1317" height="220" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595975743330" />
+    <state width="1317" height="220" key="GridCell.Tab.0.right" timestamp="1595975743330">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595919897128" />
+    <state width="1317" height="220" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1595975743330" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1595804137436">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

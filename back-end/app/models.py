@@ -31,12 +31,12 @@ class Country(BaseModel):
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(_('email address'), unique=True, null=True, blank=True)
     first_name = models.CharField(_('first name'), max_length=32, blank=True)
-    second_name = models.CharField(max_length=32, blank=True)
-    middle_name = models.CharField(max_length=32, blank=True)
     last_name = models.CharField(_('last name'), max_length=32, blank=True)
     date_joined = models.DateTimeField(_('date joined'), auto_now_add=True)
     is_active = models.BooleanField(_('active'), default=True)
     is_staff = models.BooleanField(_('staff'), default=True)
+    second_name = models.CharField(max_length=32, blank=True)
+    middle_name = models.CharField(max_length=32, blank=True)
     phone = models.CharField(max_length=32, null=True, blank=True)
     country = models.ForeignKey(Country, on_delete=models.DO_NOTHING, null=True)
     avatar = models.ForeignKey(Image, on_delete=models.CASCADE, null=True, blank=True)
@@ -52,6 +52,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_full_name(self):
         full_name = '%s %s' % (self.first_name, self.last_name)
         return full_name.strip()
+
+    @property
+    def username(self):
+        return self.email
 
     @property
     def full_name(self):

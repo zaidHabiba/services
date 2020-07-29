@@ -18,10 +18,15 @@ class UserSerializer(serializers.ModelSerializer):
     avatar = ImageSerializer(read_only=True, required=False)
 
     class Meta:
-        fields = ['*']
+        fields = "__all__"
         model = User
         extra_kwargs = {
             'id': {'read_only': True},
             'password': {'write_only': True},
             'full_name': {'read_only': True}
         }
+
+    def save(self, **kwargs):
+        user = User.objects.create_user(**{**self.data.serializer.initial_data})
+        user.set_password(self.data.serializer.initial_data['password'])
+        return user
